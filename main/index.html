@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+  <!-- Start leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+  <!-- End leaflet.js -->
+
+  <link rel="stylesheet" href="style.css">
+  <title>Weather and Air Quality</title>
+</head>
+<body>
+  <div class="main">
+    <h1 class="header">Weather and Air Qulaity inspector </h1>
+
+    <p class="geo">
+      Latitude : <span id="latitude"></span>&deg <br>
+      Longitude : <span id="longitude"></span>&deg <br>
+      time : <span id="time"></span> <br>
+      temperature : <span id="temp"></span>&deg C <br>
+      Air quality : <span id="aq"></span> <br>
+    </p>
+
+    <div class="weather_air">
+      <h2>Input desired Location</h2>
+      
+        <div class="inp_data">
+          <label for="country">Country</label>
+          <input type="text" id="country" placeholder="Country name">
+        </div>
+
+        <button id="submit">Locate Position</button>
+        <button id="history">Get History</button>
+        
+
+      </form>
+    </div>
+    <div id="mapid"></div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

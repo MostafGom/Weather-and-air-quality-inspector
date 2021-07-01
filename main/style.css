@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+.main {
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+  background-color: mintcream;
+}
+.main h1 {
+  color: darkslategray;
+  background-color: lightseagreen;
+  border-radius: 5px;
+  padding: 10px;
+}
+.main p {
+  font-size: 18px;
+  background-color: lightcoral;
+  padding: 10px;
+  border-radius: 5px;
+}
+#mapid {
+  height: 300px;
+}
+
+.weather_air {
+  margin-top: 50px;
+}
+.weather_air h2 {
+  border-bottom: black 2px solid;
+}
+
+#submit,
+#history {
+  background-color: lightslategray;
+  color: white;
+}
+
+#submit:hover,
+#history:hover {
+  background-color: white;
+  color: black;
+}
+/* #form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+} */
